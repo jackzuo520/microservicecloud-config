@@ -5,7 +5,7 @@ spring:
   application:
     name: microsevicecloud-config-eureka-client
   profiles:
-    active£ºtest
+    active: dev
 eureka:
   client:
     service-url: 
@@ -20,7 +20,7 @@ spring:
   application:
     name: microsevicecloud-config-eureka-client
   profiles: 
-    active£ºtest
+    active: test
 
 eureka:
   client:
