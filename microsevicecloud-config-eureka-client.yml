@@ -1,31 +1,29 @@
 server:
   port: 7001
+
+spring:
+  application:
+    name: microsevicecloud-config-eureka-client
+  profiles: test
+
 eureka:
   client:
-    service-url:
+    service-url: 
         defualtZone: http://localhost:7001/eureka/
-    fetch-registry: false
     register-with-eureka: false
-  instance:
-    hostname: eureka7001.com
-    
-spring:
-   profiles: dev
-   application:
-     name: microsevicecloud-config-eureka-client
+    fetch-registry: false
 ---
 server:
   port: 7001
+
+spring:
+  application:
+    name: microsevicecloud-config-eureka-client
+  profiles: dev
+
 eureka:
   client:
-    service-url:
+    service-url: 
         defualtZone: http://localhost:7001/eureka/
-    fetch-registry: false
     register-with-eureka: false
-  instance:
-    hostname: eureka7001.com
-    
-spring:
-   profiles: test
-   application:
-     name: microsevicecloud-config-eureka-client
+    fetch-registry: false
