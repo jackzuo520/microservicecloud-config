@@ -1,5 +1,5 @@
 server:
-  port: 7777
+  port: 7080
 
 spring:
   application:
@@ -14,4 +14,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
   instance:
-    hostname: ribbon-7777.com
+    hostname: ribbon-7080.com
