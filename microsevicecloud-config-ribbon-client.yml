@@ -1,5 +1,5 @@
 server:
-  port: 7080
+  port: 7777
 
 spring:
   application:
@@ -12,6 +12,22 @@ eureka:
     service-url:
         defualtZone: http://localhost:7001/eureka/
     register-with-eureka: false
-    fetch-registry: false
   instance:
-    hostname: ribbon-7080.com
+    hostname: ribbon-7777.com
+---
+server:
+  port: 7777
+
+spring:
+  application:
+    name: microservicecloud-config-ribbon-client
+  profiles:
+    active: test
+eureka:
+  client:
+    service-url: 
+        defualtZone: http://localhost:7001/eureka/
+    register-with-eureka: false
+  instance:
+    hostname: ribbon-7777.com
+
