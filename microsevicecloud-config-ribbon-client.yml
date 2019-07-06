@@ -11,7 +11,6 @@ eureka:
   client:
     service-url:
         defualtZone: http://localhost:7001/eureka/
-    register-with-eureka: false
   instance:
     hostname: ribbon-7777.com
 ---
@@ -27,7 +26,6 @@ eureka:
   client:
     service-url: 
         defualtZone: http://localhost:7001/eureka/
-    register-with-eureka: false
   instance:
     hostname: ribbon-7777.com
 
